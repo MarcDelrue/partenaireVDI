@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar no-border-top>
+     <button  ion-button icon-only menuToggle style="color: #FFF">
+       <ion-icon name="arrow-back" (click)="displayMenu != displayMenu"></ion-icon>
+     </button>
+     <ion-title>Emplois</ion-title>
+   </ion-toolbar>
+</ion-header>
+<ion-content padding>
+  <ion-item>
+    <ion-label color="fonttheme" fixed class="profilInput" placeholder="Décrivez l'atelier">Description</ion-label>
+    <ion-textarea color="fonttheme" class="profilInput" rows="6"></ion-textarea>
+  </ion-item>
+  <div class="saveButton">
+    <button ion-button class="styledButton">Enregistrer</button>
+  </div>
+</ion-content>

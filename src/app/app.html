@@ -1,0 +1,28 @@
+<ion-menu [content]="content">
+  <ion-content style="background-image: url('assets/img/thumbnail.jpg');  background-size: cover;">
+  <div style="margin: 40px">
+    <img class="profilPic giveSpace" src="assets/img/selfie.jpg">
+  </div>
+  <span>
+  <ion-item menuToggle no-lines class="pageList" (click)="goToProfil()">
+    Profil
+  </ion-item>
+  <ion-item menuToggle no-lines class="pageList" (click)="goToWorkshop()">
+    Ateliers
+  </ion-item>
+  <ion-item menuToggle no-lines class="pageList" (click)="goToPhotos()">
+    Galerie
+  </ion-item>
+  <ion-item menuToggle no-lines class="pageList" (click)="goToLinks()">
+    Liens
+  </ion-item>
+  <ion-item menuToggle no-lines class="pageList" (click)="goToJobs()">
+    Emplois
+  </ion-item>
+  <ion-footer class="pageList" (click)="goToLogin()" style="margin-bottom: 40px">
+    Déconnexion
+  </ion-footer>
+</span>
+</ion-content>
+</ion-menu>
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

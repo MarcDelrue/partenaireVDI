@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar no-border-top>
+     <button ion-button icon-only menuToggle style="color: #FFF">
+       <ion-icon name="arrow-back" (click)="displayMenu != displayMenu"></ion-icon>
+     </button>
+     <ion-title>Tableau de bord</ion-title>
+   </ion-toolbar>
+</ion-header>
+<ion-content padding>
+  <ion-label color="fonttheme" style="font-size: 25px; text-align: center">Modifier votre profil</ion-label>
+    <img class="profilPic" src="assets/img/selfie.jpg">
+  <ion-item>
+    <ion-label color="fonttheme" fixed class="profilInput inputLabel">Prénom</ion-label>
+    <ion-input color="fonttheme" [(ngModel)]="user.first_name" class="profilInput"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="fonttheme" fixed class="profilInput inputLabel">Nom</ion-label>
+    <ion-input color="fonttheme" [(ngModel)]="user.last_name" class="profilInput"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="fonttheme" fixed class="profilInput inputLabel">Adresse</ion-label>
+    <ion-input color="fonttheme" [(ngModel)]="user.address" class="profilInput"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="fonttheme" fixed class="profilInput inputLabel">E-mail</ion-label>
+    <ion-input color="fonttheme" [(ngModel)]="user.email" class="profilInput"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="fonttheme" fixed class="profilInput inputLabel">Téléphone</ion-label>
+    <ion-input color="fonttheme" [(ngModel)]="user.phone" class="profilInput"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="fonttheme" fixed class="profilInput inputLabel">Description</ion-label>
+    <ion-textarea color="fonttheme" class="profilInput" rows="4"  [(ngModel)]="user.description"></ion-textarea>
+  </ion-item>
+  <div class="saveButton">
+    <button ion-button class="styledButton">Enregistrer</button>
+  </div>
+</ion-content>

@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar no-border-top>
+     <button  ion-button icon-only menuToggle style="color: #FFF">
+       <ion-icon name="arrow-back"></ion-icon>
+     </button>
+     <ion-title>Galerie</ion-title>
+   </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-slides pager>
+  <ion-slide *ngFor="let singleImg of arrayImg">
+    <button style="position:absolute; background: rgba(0,0,0,0); text-shadow: 0 0 5px black; font-size: 35px; color: #FFF">
+      <ion-icon name="close"></ion-icon>
+    </button>
+    <img [src]='singleImg' class="photos">
+  </ion-slide>
+</ion-slides>
+<div style="position: static; text-align: center;">
+  <button ion-button class="styledButton">Ajouter</button>
+</div>
+  <!-- <div *ngFor='let singleImg of arrayImg' style="display: inline-block; text-align: center; position: relative">
+    <img [src]='singleImg' class="photos">
+  </div>
+  <div class="saveButton">
+    <button ion-button style="border-radius: 20px">Ajouter</button>
+  </div> -->
+</ion-content>

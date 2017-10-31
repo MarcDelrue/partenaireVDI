@@ -1,0 +1,18 @@
+{
+    "cordova-plugin-calendar": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-calendar"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-googlemaps": {
+        "source": {
+            "type": "registry",
+            "id": "https://github.com/mapsplugin/cordova-plugin-googlemaps#multiple_maps"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

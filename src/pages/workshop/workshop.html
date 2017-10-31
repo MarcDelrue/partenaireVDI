@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar no-border-top>
+     <button  ion-button icon-only menuToggle style="color: #FFF">
+       <ion-icon name="arrow-back" (click)="displayMenu != displayMenu"></ion-icon>
+     </button>
+     <ion-title>Atelier</ion-title>
+   </ion-toolbar>
+</ion-header>
+<ion-content padding>
+  <ion-item>
+    <ion-label color="fonttheme" class="profilInput">Date</ion-label>
+    <ion-datetime displayFormat="DD | MM | YYYY" pickerFormat="DD MMM YYYY" [(ngModel)]="dateWorkshop" max="2100"></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label color="fonttheme" class="profilInput">Heure</ion-label>
+    <ion-datetime displayFormat="HH:mm" pickerFormat="HH mm" [(ngModel)]="hourWorkshop"></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label color="fonttheme" class="profilInput">Type</ion-label>
+    <ion-input color="fonttheme" class="profilInput"></ion-input>
+  </ion-item>
+  <ion-item>
+    <label style="color: #753f63; margin-right: 25px" class="profilInput">Ville</label>
+      <input placeholder="Localisation" class="form-control" style="border:none;" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" [(ngModel)]="location" name="address" placeholder="" #compo>
+    <!-- <ion-input color="fonttheme" class="profilInput"></ion-input> -->
+  </ion-item>
+  <ion-item>
+    <ion-label color="fonttheme" fixed class="profilInput" placeholder="Décrivez l'atelier">Description</ion-label>
+    <ion-textarea color="fonttheme" class="profilInput" rows="4"></ion-textarea>
+  </ion-item>
+  <div class="saveButton">
+    <button ion-button class="styledButton">Enregistrer</button>
+  </div>
+  <hr>
+  <label>Every other atelier</label>
+</ion-content>
